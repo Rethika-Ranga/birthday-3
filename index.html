@@ -43,6 +43,13 @@ h1,h2,h3{font-family:'Caveat',cursive;margin:0;}
 .polaroid{position:absolute;background:var(--white);padding:10px 10px 28px;border-radius:6px;box-shadow:var(--shadow);width:120px;z-index:2;animation:sway 5s ease-in-out infinite;transform-origin:top center;}
 .polaroid::before{content:'';position:absolute;top:-14px;left:50%;transform:translateX(-50%);width:34px;height:14px;background:rgba(255,255,255,.7);border:1px solid rgba(0,0,0,.08);border-radius:2px;}
 .polaroid-img{width:100%;height:100px;border-radius:3px;background:linear-gradient(135deg,var(--sky),var(--ocean));display:flex;align-items:center;justify-content:center;font-size:1.6rem;color:var(--white);}
+  .polaroid-img img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+    border-radius:3px;
+}
 .polaroid-img.small{height:50px;font-size:1rem;}
 .polaroid-cap{font-family:'Caveat',cursive;text-align:center;font-size:.9rem;color:var(--ink);margin-top:5px;}
 
