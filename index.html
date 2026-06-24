@@ -440,12 +440,7 @@ function renderHeartLightsPage(item){
     <h2 class="heart-page-title">Day ${item.day}</h2>${rtag(item)}
     <div class="heart-canvas-wrap" style="width:${W}px;height:${H}px;">${lightsHtml}${polsHtml}</div>
     <p class="heart-caption">a heart full of our memories 💙</p></div>`;
-.heart-polaroid img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    border-radius:3px;
-}}
+}
 
 function renderRetroPage(item){
   const stars=Array.from({length:28},()=>{const t=(Math.random()*100).toFixed(1),l=(Math.random()*100).toFixed(1),d=(Math.random()*3).toFixed(2);return `<span class="retro-star" style="top:${t}%;left:${l}%;animation-delay:${d}s;"></span>`;}).join('');
