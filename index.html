@@ -354,7 +354,7 @@ const CONFIG = {
     {day:18,unlock:new Date(2026,5,27,0,0,0),icon:"📸",label:"A Memory",reason:"The way you spend your time with me😭",pageType:"heartlights"},
     {day:17,unlock:new Date(2026,5,28,0,0,0),icon:"🎲",label:"Tap For Love",reason:"The way you are playful with me😭",pageType:"retro"},
     {day:16,unlock:new Date(2026,5,29,0,0,0),icon:"🎂",label:"2 Weeks To Go!",reason:"The way you have celebrated me and US😭",pageType:"cakeblast"},
-    {day:15,unlock:new Date(2026,5,30,0,0,0),icon:"🎬",label:"A Little Edit",reason:"",pageType:"lovevideo1"},
+    {day:15,unlock:new Date(2026,5,30,0,0,0),icon:"🎬",label:"A Little Edit",reason:"The way you have added literal colours to my life😭",pageType:"lovevideo1"},
     {day:14,unlock:new Date(2026,6,1,0,0,0),icon:"🎧",label:"Our Playlist",reason:"",pageType:"spotify",playlistUrl:"https://open.spotify.com/playlist/REPLACE_WITH_YOUR_PLAYLIST_ID"},
     {day:13,unlock:new Date(2026,6,2,0,0,0),icon:"🧸",label:"A Hug For You",reason:"The way you have Comforted me at my lows😭",pageType:"teddyhug"},
     {day:12,unlock:new Date(2026,6,3,0,0,0),icon:"🔮",label:"Predictions For 20",reason:"The way you always made me laugh and feel so Happy around you😭",pageType:"predictions"},
@@ -480,7 +480,7 @@ function renderLoveVideoPage(item,v){
   const deco=P.decos.map((d,i)=>`<span class="lovevideo-deco" style="top:${10+i*18}%;${i%2?'right':'left'}:${8+i*4}%;animation-delay:${(i*.4).toFixed(2)}s;">${d}</span>`).join('');
   return `<div class="page-inner lovevideo" style="background:${P.bg};"><button class="back-btn" onclick="closePage()">← back</button>
     ${deco}<h2 class="lovevideo-title">${P.title}</h2>${rtag(item)}
-    <div class="video-placeholder">▶️<br><small>[TODO: embed your video edit here — YouTube unlisted iframe or &lt;video&gt; tag]</small></div></div>`;}
+    <div class="video-placeholder">▶️<br><small>WhatsApp Video 2026-06-25 at 1.35.07 AM.mp4</small></div></div>`;}
 
 function renderSpotifyPage(item){
   const noteData=[{e:'♪',l:8,d:5},{e:'♫',l:22,d:7},{e:'♩',l:65,d:6},{e:'♬',l:80,d:8},{e:'♫',l:42,d:9},{e:'♪',l:55,d:5.5}];
