@@ -480,7 +480,8 @@ function renderLoveVideoPage(item,v){
   const deco=P.decos.map((d,i)=>`<span class="lovevideo-deco" style="top:${10+i*18}%;${i%2?'right':'left'}:${8+i*4}%;animation-delay:${(i*.4).toFixed(2)}s;">${d}</span>`).join('');
   return `<div class="page-inner lovevideo" style="background:${P.bg};"><button class="back-btn" onclick="closePage()">← back</button>
     ${deco}<h2 class="lovevideo-title">${P.title}</h2>${rtag(item)}
-    <div class="video-placeholder">WhatsApp Video 2026-06-25 at 1.35.07 AM.mp4<br><small></small></div></div>`;}
+    <div class="video-placeholder"><video controls style="width:100%;max-width:500px;border-radius:20px;">
+      <source src="WhatsApp Video 2026-06-25 at 1.35.07 AM.mp4" type="video/mp4"></video></div>`;}
 
 function renderSpotifyPage(item){
   const noteData=[{e:'♪',l:8,d:5},{e:'♫',l:22,d:7},{e:'♩',l:65,d:6},{e:'♬',l:80,d:8},{e:'♫',l:42,d:9},{e:'♪',l:55,d:5.5}];
