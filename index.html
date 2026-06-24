@@ -117,7 +117,7 @@ footer.footer{text-align:center;padding:40px 20px 60px;color:rgba(255,255,255,.8
     border-radius:3px;
 }
 .heart-light{position:absolute;width:9px;height:9px;border-radius:50%;animation:twinkle 1.8s ease-in-out infinite;z-index:4;}
-.heart-caption{font-family:'Caveat',cursive;color:#ffe0ec;font-size:1.5rem;margin-top:10px;}
+.heart-caption{font-family:'Caveat',cursive;color:#ffe0ec;font-size:1.5rem;margin-top:50px;}
 
 /* RETRO */
 .page-inner.retro{background:#0d0d1a;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;overflow:hidden;font-family:'Press Start 2P',monospace;color:#39ff88;}
@@ -432,7 +432,7 @@ function heartCurvePoints(n,scale,cx,cy){
 }
 
 function renderHeartLightsPage(item){
-  const W=340,H=320,scale=15,cx=W/2,cy=H/2-10;
+  const W=340,H=380,scale=15,cx=W/2,cy=H/2-30;
   const pols=heartCurvePoints(18,scale,cx,cy);
   const lights=heartCurvePoints(22,scale,cx,cy);
   const pics =["images/pic1.jpeg","images/pic2.jpeg","images/pic3.jpeg","images/pic4.jpeg","images/pic5.jpeg","images/pic6.jpeg","images/pic7.jpeg","images/pic8.jpeg","images/pic9.jpeg","images/pic10.jpeg","images/pic11.jpeg","images/pic12.jpeg","images/pic13.jpeg","images/pic14.jpeg","images/pic15.jpeg","images/pic16.jpeg","images/pic17.jpeg","images/pic18.jpeg"];
