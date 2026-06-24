@@ -344,8 +344,7 @@ footer.footer{text-align:center;padding:40px 20px 60px;color:rgba(255,255,255,.8
 </section>
 
 <footer class="footer">
-  <p>made with all my heart, just for you 💙</p>
-  <button id="previewToggle" class="preview-toggle">🔧 test mode</button>
+  <p>made with all my heart, just for you pattu💙</p>
 </footer>
 
 <div class="page-view" id="pageView"><div id="pageContent"></div></div>
@@ -741,9 +740,6 @@ function attachInteractions(item){
   }
 }
 
-document.getElementById('previewToggle').addEventListener('click',(e)=>{
-  previewMode=!previewMode;e.target.textContent=previewMode?'🔧 test mode: ON':'🔧 test mode';renderGrid();
-});
 
 function updateCountdown(){
   const now=new Date(),diff=CONFIG.birthday-now;
