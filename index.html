@@ -432,10 +432,10 @@ function heartCurvePoints(n,scale,cx,cy){
 }
 
 function renderHeartLightsPage(item){
-  const W=340,H=320,scale=12,cx=W/2,cy=H/2-10;
-  const pols=heartCurvePoints(14,scale,cx,cy);
+  const W=340,H=320,scale=15,cx=W/2,cy=H/2-10;
+  const pols=heartCurvePoints(18,scale,cx,cy);
   const lights=heartCurvePoints(22,scale,cx,cy);
-  const pics =["images/pic1.jpeg","images/pic2.jpeg","images/pic3.jpeg","images/pic4.jpeg","images/pic5.jpeg","images/pic6.jpeg","images/pic7.jpeg","images/pic8.jpeg","images/pic9.jpeg","images/pic10.jpeg","images/pic11.jpeg","images/pic12.jpeg","images/pic13.jpeg","images/pic14.jpeg"];
+  const pics =["images/pic1.jpeg","images/pic2.jpeg","images/pic3.jpeg","images/pic4.jpeg","images/pic5.jpeg","images/pic6.jpeg","images/pic7.jpeg","images/pic8.jpeg","images/pic9.jpeg","images/pic10.jpeg","images/pic11.jpeg","images/pic12.jpeg","images/pic13.jpeg","images/pic14.jpeg","images/pic15.jpeg","images/pic16.jpeg","images/pic17.jpeg","images/pic18.jpeg"];
    const polsHtml=pols.map((p,i)=>`<div class="heart-polaroid" style="left:${(p.x-30).toFixed(0)}px;top:${(p.y-35).toFixed(0)}px;width:60px;animation-delay:${(i*.25).toFixed(2)}s;">
     <div class="polaroid-img small"><img src="${pics[i]}"></div><div class="polaroid-cap" style="font-size:.7rem;">us 💙</div></div>`).join('');
   const lightsHtml=lights.map((p,i)=>{  
@@ -446,7 +446,7 @@ function renderHeartLightsPage(item){
   return `<div class="page-inner heartlights"><button class="back-btn" onclick="closePage()">← back</button>
     <h2 class="heart-page-title">Day ${item.day}</h2>${rtag(item)}
     <div class="heart-canvas-wrap" style="width:${W}px;height:${H}px;">${lightsHtml}${polsHtml}</div>
-    <p class="heart-caption">a heart full of our memories 💙</p></div>`;
+    <br><br><p class="heart-caption">a heart full of our memories 💙</p></div>`;
 }
 
 function renderRetroPage(item){
