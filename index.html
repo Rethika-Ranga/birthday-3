@@ -110,6 +110,12 @@ footer.footer{text-align:center;padding:40px 20px 60px;color:rgba(255,255,255,.8
 .heart-page-title{font-family:'Caveat',cursive;color:#fff;font-size:2.2rem;margin-bottom:4px;}
 .heart-canvas-wrap{position:relative;margin:30px auto 20px;}
 .heart-polaroid{position:absolute;background:#fff;padding:5px 5px 14px;border-radius:4px;box-shadow:0 6px 14px rgba(0,0,0,.35);animation:sway 4.5s ease-in-out infinite;transform-origin:top center;z-index:5;}
+.heart-polaroid img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:3px;
+}
 .heart-light{position:absolute;width:9px;height:9px;border-radius:50%;animation:twinkle 1.8s ease-in-out infinite;z-index:4;}
 .heart-caption{font-family:'Caveat',cursive;color:#ffe0ec;font-size:1.5rem;margin-top:10px;}
 
@@ -430,7 +436,7 @@ function renderHeartLightsPage(item){
   const pols=heartCurvePoints(18,scale,cx,cy);
   const lights=heartCurvePoints(22,scale,cx,cy);
   const polsHtml=pols.map((p,i)=>`<div class="heart-polaroid" style="left:${(p.x-26).toFixed(0)}px;top:${(p.y-30).toFixed(0)}px;width:52px;animation-delay:${(i*.25).toFixed(2)}s;">
-    <div class="polaroid-img small">📸</div><div class="polaroid-cap" style="font-size:.7rem;">us 💙</div></div>`).join('');
+    <div class="polaroid-img small"><img src="images/pic${i+1}.jpg"></div><div class="polaroid-cap" style="font-size:.7rem;">us 💙</div></div>`).join('');
   const lightsHtml=lights.map((p,i)=>{
     const cols=['#fff3b0','#ffb8cf','#cfe8ff','#b8ffc8','#ffd6e8'];
     const c=cols[i%cols.length];
